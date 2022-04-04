@@ -62,7 +62,6 @@ export jd_w630_expand="openCard=1"
 2. 使用`config.yaml`替换`auto_spy.yaml`的`js_config`内容
 2. 在青龙容器执行下列sh
 ```shell
-# 青龙面板
 rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now
 ```
 3. 压缩包里面的js脚本添加进青龙 **切记添加定时任务**
