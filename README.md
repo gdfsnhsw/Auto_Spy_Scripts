@@ -73,8 +73,8 @@ rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.gi
 8. `python3 auto_spy_bot.py &` 后台持久运行
 ### 更新说明
 进入青龙容器执行
-
-`rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now`
-
+```shell
+rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now
+```
 即可
 
