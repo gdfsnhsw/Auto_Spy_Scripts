@@ -1,21 +1,24 @@
 # Auto_Spy_Scripts
-Ver：**20220331-010**
-**by: https://t.me/windfgg**
+
+Ver：**20220509-013**
+**by: https://t.me/FengTools**
 
 分享有礼需要添加变量 `ownCookieNum` 需要助力的CK数量 默认4
 
-**M系统和kedaya教程都相同 kedaya分组并发跑得快不过IP黑的也快 M比稳跑的慢**
+**M系统和kedaya教程都相同  推荐使用kedaya**
+**kedaya分组并发跑得快不过IP黑的也快 **
+**M比稳跑的慢 但是建议M设置`desi JD_COOKIE 1-3` 某些脚本只跑自己的前几个CK**
+
+kedaya token 机器人:[@qitoBot](https://t.me/qitoBot) 发 `token` 获取kedaya token 环境变量 `QITOQITO`
 
 ## 更新说明
-
-- 开卡入会脚本h5st 接口修改为甘露殿接口
-- 添加甘露殿 众筹许愿池、电脑配件任务
-
+- 添加pkc关注有礼
+- 添加pkc特效关注有礼
 ## 已知问题
-- kedaya_组队 可能跑不了
+- NULL
 ## 教程
 
-**傻妞容器ID要改**
+**傻妞容器ID要改 `[]` 代表所有容器都跑**
 
 ![image-20220328192946696](https://pic.rmb.bdstatic.com/bjh/3e4638c0ead038429412991ac716f762.png)
 
@@ -62,6 +65,7 @@ export jd_w630_expand="openCard=1"
 2. 使用`config.yaml`替换`auto_spy.yaml`的`js_config`内容
 2. 在青龙容器执行下列sh
 ```shell
+# 青龙面板
 rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now
 ```
 3. 压缩包里面的js脚本添加进青龙 **切记添加定时任务**
@@ -70,10 +74,42 @@ rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.gi
 6. 将脚本和配置文件放到青龙 `scripts/auto_spy/`文件夹下，设置电报和青龙参数，可以建立一个群，用于机器人打印日志
 7. 进入青龙容器，运行`cd /ql/scripts/auto_spy` 进入目录 `python3 auto_spy_bot.py`，登录你的tg，登录成功并看到鉴权成功后，ctrl+c退出
 8. `python3 auto_spy_bot.py &` 后台持久运行
-### 更新说明
+### kedaya更新说明
 进入青龙容器执行
-```shell
-rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now
-```
+`rm -rf /ql/repo/qitoqito_kedaya && ql repo https://github.com/qitoqito/kedaya.git kedaya && cp -a /ql/repo/qitoqito_kedaya/. /ql/scripts && task qitoCreat.js now`
 即可
+
+## 环境变量对照表
+
+| 环境变量名称            | 说明                |
+| ----------------------- | ------------------- |
+| M_WX_LUCK_DRAW_URL      | 幸运抽奖            |
+| M_WX_ADD_CART_URL       | 加购有礼            |
+| M_WX_CENTER_DRAW_URL    | 集卡有礼            |
+| M_WX_FOLLOW_DRAW_URL    | 关注店铺抽奖        |
+| M_FOLLOW_SHOP_ARGV      | 关注店铺            |
+| M_WX_SECOND_DRAW_URL    | 读秒拼手速          |
+| M_FAV_SHOP_ARGV         | 收藏有礼            |
+| ACTIVITY_ID             | 分享有礼            |
+| SHARE_ACTIVITY_ID       | 分享有礼            |
+| jd_zdjr_activityId      | zd组队瓜分Id        |
+| jd_cjhy_activityId      | cj组队瓜分Id        |
+| jd_cjhy_activityUrl     | zd组队瓜分Url       |
+| jd_zdjr_activityUrl     | cj组队瓜分Url       |
+| jd_wdz_activityId       | 微定制Id            |
+| jd_wdz_activityUrl      | 微定制Url           |
+| DPQDTK                  | 店铺签到Token &分割 |
+| dpactId                 | 通用大牌Id          |
+| actId                   | 通用大牌Id          |
+| computer_activityId     | 电脑配件            |
+| computer_activityIdList | 电脑配件            |
+| VENDER_ID               | 入会有礼            |
+| jd_mhurlList            | 盲盒抽京豆          |
+| jd_redrain_half_url     | 半点京东雨Url       |
+| wish_appIdArrList       | 众筹许愿池          |
+| wish_appNameArrList     | 众筹许愿池          |
+| comm_activityIDList     | jd_joyjd_open      |
+| HDID                    |    福袋            |
+| PKC_GZYL | PKC关注有礼 |
+| PKC_TXGZYL | PKC特效关注有礼 |
 
