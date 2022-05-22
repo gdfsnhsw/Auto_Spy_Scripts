@@ -1,5 +1,5 @@
 let mode = __dirname.includes('magic')
-const { Env } = mode ? require('../Kedaya/magic') : require('../Kedaya/magic')
+const { Env } = mode ? require('./Kedaya/magic') : require('./Kedaya/magic')
 const $ = new Env('M幸运抽奖');
 $.activityUrl = process.env.M_WX_LUCK_DRAW_URL
     ? process.env.M_WX_LUCK_DRAW_URL
