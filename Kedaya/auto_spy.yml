@@ -153,6 +153,17 @@ js_config:
   TimeOut: 0
   Wait: 5
 
+## 店铺签到
+- Container:
+  - []
+  Env: DPQDTK
+  KeyWord:
+  - - DPQDTK
+  Name: 店铺签到
+  Script: jd_dpqd.js
+  TimeOut: 0
+  Wait: 5
+
 # 打豆豆
 - Container:
   - []
