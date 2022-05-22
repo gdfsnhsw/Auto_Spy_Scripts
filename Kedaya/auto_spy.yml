@@ -43,63 +43,52 @@ js_config:
   TimeOut: 0
   Wait: 2
 
-## 关注店铺
-- Container:
-  - []
-  Env: jd_task_shopGift_custom
-  KeyWord:
-  - - M_WX_FOLLOW_DRAW_URL
-  - - M_FOLLOW_SHOP_ARGV
-  - - jd_task_shopGift_custom
-  Name: kedaya_关注店铺
-  Script: jd_task_shopGift.js
-  TimeOut: 0
-  Wait: 5
-
-## 读秒拼手速
-- Container:
-  - []
-  Env: M_WX_SECOND_DRAW_URL
-  KeyWord:
-  - - M_WX_SECOND_DRAW_URL
-  Name: 读秒拼手速
-  Script: jd_wxSecond.js
-  TimeOut: 0
-  Wait: 5
-
 ## 收藏有礼
 - Container:
   - []
-  Env: jd_M5_custom
+  Env: jd_M4_custom
   KeyWord:
   - - M_FAV_SHOP_ARGV
   Name: 可达鸭_无线_收藏有礼
-  Script: jd_M5.js
+  Script: jd_M4.js
   TimeOut: 0
   Wait: 2
 
 ## 分享有礼
 - Container:
   - []
-  Env: jd_M6_custom
+  Env: jd_M5_custom
   KeyWord:
   - - ACTIVITY_ID
   - - SHARE_ACTIVITY_ID
   Name: 可达鸭_无线_分享有礼
-  Script: jd_M6.js
+  Script: jd_M5.js
   TimeOut: 0
   Wait: 2
 
 ## 集卡抽奖
 - Container:
   - []
-  Env: jd_M7_custom
+  Env: jd_M6_custom
   KeyWord:
   - - M_WX_COLLECT_CARD_URL
   Name: 可达鸭_无线_集卡抽奖
-  Script: jd_M7.js
+  Script: jd_M6.js
   TimeOut: 0
   Wait: 2
+
+## 微定制
+- Container:
+  - []
+  Env: jd_w630_custom
+  KeyWord:
+  - - jd_wdz_activityId
+  - - jd_wdz_activityUrl
+  - - jd_w630_custom
+  Name: 可达鸭_无线_微定制
+  Script: jd_w630.js
+  TimeOut: 0
+  Wait: 5
 
 ## cj组队瓜分
 - Container:
@@ -126,19 +115,6 @@ js_config:
   TimeOut: 0
   Wait: 5
 
-## 微定制
-- Container:
-  - []
-  Env: jd_w630_custom
-  KeyWord:
-  - - jd_wdz_activityId
-  - - jd_wdz_activityUrl
-  - - jd_w630_custom
-  Name: 可达鸭_无线_微定制
-  Script: jd_w630.js
-  TimeOut: 0
-  Wait: 5
-
 #京东店铺连续签到
 - Container:
   - []
@@ -150,6 +126,30 @@ js_config:
   - - DPQDTK
   Name: kedaya_店铺签到
   Script: jd_task_shopSign.js
+  TimeOut: 0
+  Wait: 5
+
+## 关注店铺
+- Container:
+  - []
+  Env: jd_task_shopGift_custom
+  KeyWord:
+  - - M_WX_FOLLOW_DRAW_URL
+  - - M_FOLLOW_SHOP_ARGV
+  - - jd_task_shopGift_custom
+  Name: kedaya_关注店铺
+  Script: jd_task_shopGift.js
+  TimeOut: 0
+  Wait: 5
+
+## 读秒拼手速
+- Container:
+  - []
+  Env: M_WX_SECOND_DRAW_URL
+  KeyWord:
+  - - M_WX_SECOND_DRAW_URL
+  Name: 读秒拼手速
+  Script: jd_wxSecond.js
   TimeOut: 0
   Wait: 5
 
@@ -287,6 +287,7 @@ js_config:
   Script: pkc_txgzyl.js
   TimeOut: 0
   Wait: 3
+
 ## PKC关注有礼
 - Container:
   - []
