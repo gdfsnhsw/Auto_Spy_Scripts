@@ -145,9 +145,10 @@ js_config:
 ## 读秒拼手速
 - Container:
   - []
-  Env: M_WX_SECOND_DRAW_URL
+  Env: jd_wxSecond_activityId
   KeyWord:
   - - M_WX_SECOND_DRAW_URL
+  - - jd_wxSecond_activityId
   Name: 读秒拼手速
   Script: jd_wxSecond.js
   TimeOut: 0
@@ -232,7 +233,7 @@ js_config:
   TimeOut: 0
   Wait: 5
 
-# 收藏有礼
+# M收藏有礼
 - Container:
   - []
   Env: M_FAV_SHOP_ARGV
